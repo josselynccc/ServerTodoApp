@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const dbConnect = () => {
-    const DB_URI = 'mongodb://127.0.0.1:27017';
+    const DB_URI = 'mongodb+srv://cristheljosselyn1:p08xaZBkQLm791aI@cluster0.6sjyqr8.mongodb.net/';
     mongoose.connect(DB_URI)
         .then(() => {
             console.log('**** CONEXIÓN EXITOSA ****');
