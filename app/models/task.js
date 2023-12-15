@@ -8,8 +8,7 @@ const TaskScheme = new mongoose.Schema({
         type: String
     },
     list: {
-        type: Array,
-        default:[]
+        type: Array
     }
 },
     {
