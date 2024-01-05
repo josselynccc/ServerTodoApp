@@ -12,6 +12,7 @@ app.use(express.json())
 
 app.use('/api/1.0/auth', require('./app/routes/auth'))
 app.use('/api/1.0/task', require('./app/routes/task'))
+app.use('/api/1.0/users', require('./app/routes/users'))
 
 dbConnect()
 

@@ -58,13 +58,16 @@ exports.registerCtrl = async (req, res) => {
 
     try {
         //TODO: Datos que envias desde el front (postman)
-        const { email, password} = req.body
+        const { email, password, nombre, apellido, edad} = req.body
         console.log(req.body)
         
         const passwordHash = await encrypt(password) //TODO: (123456)<--- Encriptando!!
         const registerUser = await userModel.create({
             email,
-            password: passwordHash
+            password: passwordHash,
+            nombre,
+            apellido,
+            edad
         })
 
         res.send({ data: registerUser })
