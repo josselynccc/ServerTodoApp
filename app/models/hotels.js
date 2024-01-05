@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 const HotelScheme = new mongoose.Schema({
     name: {
-        type: String
+        type: String 
     },
     price: {
         type: Number
